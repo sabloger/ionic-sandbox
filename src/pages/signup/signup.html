@@ -1,0 +1,39 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <div style="display: inline-block"><img src="../../assets/imgs/logo.png" alt="bid for my trip"></div>
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content>
+  <social-login></social-login>
+  <div class="signup">
+    <div padding="">
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+        <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+      </div>
+      <br>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+        <input id="username" type="text" class="form-control" name="username" placeholder="Username">
+      </div>
+      <br>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+      </div>
+      <br><br>
+      <button class="btn btn-success" style="width: 100%; line-height: 30px; margin-bottom: 5px;">Sign up</button>
+      <aside class="ng-scope">
+        <span class="fa fa-info-circle"> </span> Already a member?
+        <a (click)="goToLogin()" fl-analytics="GoToLogin" fl-label="Signup">Log in</a>
+      </aside>
+    </div>
+  </div>
+</ion-content>

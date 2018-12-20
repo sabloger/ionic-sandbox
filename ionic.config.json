@@ -1,0 +1,8 @@
+{
+  "name": "sandbox",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "id": "531b0d8d"
+}
